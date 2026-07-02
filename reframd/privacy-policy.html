@@ -27,77 +27,132 @@
 <body>
 
 <h1>REFRAMD — Privacy Policy</h1>
-<p class="updated">Last updated : 29 April 2026</p>
+<p class="updated">Last updated : 2 July 2026</p>
 
 <p>
 REFRAMD is a mobile application that lets you discover, save and share Rive animations from
-the Rive Community. This privacy policy describes what (very little) data the app handles.
+the Rive Community. This policy explains what data the app handles, what stays on your
+device, and which third-party services are involved.
 </p>
 
-<h2>1. Data we do NOT collect</h2>
-<p>REFRAMD does <strong>not</strong> collect, store, transmit or share any of the following:</p>
+<h2>1. Summary</h2>
 <ul>
-  <li>Personal information (name, email, phone, address)</li>
-  <li>Account credentials (no signup, no login)</li>
-  <li>Location data</li>
-  <li>Device identifiers (IDFA, advertising ID)</li>
-  <li>Health, financial, or biometric data</li>
-  <li>Contacts, calendar, photos, or any other on-device content</li>
-  <li>Behavioral analytics or usage tracking</li>
-  <li>Crash reports with personally identifiable information</li>
+  <li>No account, no signup, no login — we do not operate our own servers or user database.</li>
+  <li>Your favorites and albums are stored locally on your device only.</li>
+  <li>The app shows <strong>non-personalized ads</strong> (Google AdMob). We do not use Apple's App Tracking Transparency framework because we do not track you across apps.</li>
+  <li>We collect <strong>anonymous usage analytics</strong> (PostHog, hosted in the EU) and <strong>crash reports</strong> (Sentry) to improve the app.</li>
+  <li>We never sell data, and no data we collect identifies you personally.</li>
 </ul>
 
 <h2>2. Data stored locally on your device</h2>
 <p>
 The following information is stored only on your device, in the application's private
-sandbox, and is never transmitted to any server :
+sandbox, and is never transmitted to any server of ours :
 </p>
 <ul>
-  <li>Your saved animations (favorites)</li>
+  <li>Your saved animations (favorites) and albums</li>
   <li>The list of animations you have already viewed (to avoid showing them again in Discover)</li>
   <li>The list of animations you have hidden in Browse</li>
   <li>Whether you have completed the onboarding</li>
-  <li>The last tag filter you selected in Browse</li>
+  <li>Your app preferences (language, last tag filter, etc.)</li>
 </ul>
 <p>
 This data may be included in your device's iCloud or Google Drive backup if you have
 backups enabled — that mechanism is provided by Apple/Google and is outside our control.
+You can erase this data at any time via Settings → full reset inside the app, or by
+deleting the app.
 </p>
 
-<h2>3. Network requests</h2>
+<h2>3. Network requests for content</h2>
 <p>
 The app makes HTTP requests to the <a href="https://rive.app">Rive Community API</a>
 to fetch animation metadata and animation files (.riv). These requests do not include
-any user identifier — they are anonymous. The Rive Community service has its own
+any user identifier. The Rive Community service has its own
 <a href="https://rive.app/legal/privacy-policy">privacy policy</a>.
 </p>
+
+<h2>4. Advertising (Google AdMob)</h2>
 <p>
-The app also loads the Rive runtime JavaScript file from
-<a href="https://unpkg.com">unpkg.com</a> CDN at first launch. unpkg.com may log
-the IP address making the request, per their standard CDN behavior.
+REFRAMD is free and funded by ads served through <strong>Google AdMob</strong>. All ad
+requests are configured as <strong>non-personalized</strong> : ads are selected based on
+context (such as the current app and coarse location inferred from IP address), not on a
+profile of you. Consequently :
+</p>
+<ul>
+  <li>The app does <strong>not</strong> request permission to track you (no App Tracking Transparency prompt), because it does not track you across other companies' apps or websites.</li>
+  <li>The app does <strong>not</strong> use the IDFA advertising identifier for personalized advertising.</li>
+</ul>
+<p>
+To serve and measure ads and to prevent fraud, Google processes some data on its own
+behalf when an ad is requested or displayed, including :
+</p>
+<ul>
+  <li>Device information (model, OS version, screen size, language)</li>
+  <li>IP address (used for coarse geolocation and fraud prevention)</li>
+  <li>Ad interaction data (impressions, clicks)</li>
+</ul>
+<p>
+This processing is governed by Google's policies :
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a> and
+<a href="https://policies.google.com/technologies/ads">How Google uses information in advertising</a>.
 </p>
 
-<h2>4. Advertising</h2>
+<h2>5. Consent (EEA and UK users)</h2>
 <p>
-REFRAMD v1 contains no advertising. A future version may introduce non-personalized
-ads through Google AdMob, in which case this policy will be updated and consent will be
-requested where required by law (GDPR, CCPA).
+If you are located in the European Economic Area or the United Kingdom, the app shows a
+consent form powered by <strong>Google's User Messaging Platform (UMP)</strong> before ads
+are served, in accordance with the GDPR. You can decline or adjust your choices; ads remain
+non-personalized in all cases.
 </p>
 
-<h2>5. Children's privacy</h2>
+<h2>6. Analytics (PostHog)</h2>
 <p>
-REFRAMD is not directed at children under 13. We do not knowingly collect any data
-from children, since we do not collect data from anyone.
+The app uses <strong>PostHog</strong>, hosted on European Union servers
+(eu.i.posthog.com), to understand how the app is used — for example which screens are
+viewed and which features are used. These events are <strong>anonymous</strong> :
+</p>
+<ul>
+  <li>No name, email, or account identifier exists in the app, so none can be collected</li>
+  <li>Events describe app usage (screen views, feature usage), not you as a person</li>
+  <li>No tracking across other apps or websites</li>
+  <li>Data is never sold or shared for advertising purposes</li>
+</ul>
+
+<h2>7. Crash reporting (Sentry)</h2>
+<p>
+The app uses <strong>Sentry</strong> to receive crash reports when the app malfunctions.
+A crash report contains technical data only : the error and stack trace, the device model,
+and the OS version. Crash reports contain no personally identifiable information, and
+performance tracing is sampled at a low rate (10%).
 </p>
 
-<h2>6. Your rights</h2>
+<h2>8. Your rights (GDPR)</h2>
 <p>
-Since no personal data is collected, there is nothing for us to provide, correct or
-delete on your behalf. To clear local data on your device, use Settings → "Reset complet"
-inside the app, or delete and reinstall the app.
+Our legal basis for the processing described above (non-personalized advertising to fund a
+free app, anonymous analytics and crash reporting to maintain and improve it) is
+<strong>legitimate interest</strong>, complemented by the UMP consent flow where consent
+is required.
+</p>
+<p>
+Under the GDPR you have the right to access, rectify, or erase data concerning you, and to
+object to processing. Because the data we collect is anonymous, we generally cannot link
+any of it back to you — but if you have any request or question, contact
+<a href="mailto:hadrien.andre.hubert@gmail.com">hadrien.andre.hubert@gmail.com</a>
+and we will do our best to help. You also have the right to lodge a complaint with your
+local data protection authority.
+</p>
+<p>
+Data held on your device (favorites, albums, history) is fully under your control : erase
+it via the in-app reset options or by deleting the app.
 </p>
 
-<h2>7. Content licence</h2>
+<h2>9. Children's privacy</h2>
+<p>
+REFRAMD is not directed at children under 13. We do not knowingly collect data from
+children.
+</p>
+
+<h2>10. Content licence</h2>
 <p>
 Animations displayed in REFRAMD come from the Rive Community and are licensed under
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. The original creator
@@ -105,13 +160,13 @@ is credited inside the app. REFRAMD does not host or republish these animations 
 the in-app discovery and sharing flow you control.
 </p>
 
-<h2>8. Changes to this policy</h2>
+<h2>11. Changes to this policy</h2>
 <p>
 If this policy changes, the new version will be published at this URL and the
 "Last updated" date above will be revised.
 </p>
 
-<h2>9. Contact</h2>
+<h2>12. Contact</h2>
 <p>
 For any privacy-related question, contact :
 <a href="mailto:hadrien.andre.hubert@gmail.com">hadrien.andre.hubert@gmail.com</a>
